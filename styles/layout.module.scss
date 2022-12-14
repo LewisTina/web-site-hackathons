@@ -1,0 +1,46 @@
+.headerContainer{
+  padding: 1em;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 0, 0, 1);
+  backdrop-filter: blur(0.4em);
+  transition: background .3s;
+}
+
+.header{
+  height: 4em;
+  width: 100%;
+  .navList{ 
+    height: 100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+ */

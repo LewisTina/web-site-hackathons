@@ -1,0 +1,885 @@
+
+/*Get started by set font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.primary {
+  background:#6633CC;
+}
+.primaryC {
+  color:#6633CC;
+}
+
+.secondary {
+  background:#FF006B;
+}
+.secondaryC {
+  color:#FF006B;
+}
+
+.secondaryDark {
+  background:#000033;
+}
+.secondaryDarkC {
+  color:#000033;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.absoluteBox{
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+
+
+.button{
+  color: white;
+  padding: 1em 2em;
+  border-radius: 0.25em;
+  outline: none;
+  border: none;
+  font-family: "Poppins" sans-serif;
+  font-weight: 600;
+  width: 16em;
+  cursor: pointer;
+}
+
+.headerContainer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255, 0);
+  backdrop-filter: blur(1em);
+  transition: background .3s;
+  z-index: 9999;
+}
+
+.header{
+  height: 4.5em;
+  width: 100%;
+  display: flex;
+  .navBar{ 
+    margin: 0.5em 4em;
+    padding: 0.25em;
+    height: auto;
+    width: calc(100% - 27em);
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 18px 3px rgba(102, 51, 204, 0.25);
+    border-radius: 33.5px;
+
+    .navList{
+      display: inline-flex;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+
+      li{   
+      list-style: none;
+      margin: 0 0.5em;
+      padding: 0.35em 1.5em;
+      border-radius: 2em;
+      border: 2px solid transparent;
+      transition: .5s;
+      }
+    }
+
+    .navigateActive{
+      background-color: #FF006B;
+      color: white;
+    }
+
+    .navigateElement:hover{   
+      border: 2px solid #FF006B;
+      transition: .5s;
+      }
+
+  }
+}
+
+.hideMenu, .showMenu, .MenuForPhone{
+  display: none;
+}
+
+.material-icons{
+  color: white;
+}
+
+.logo{
+  height: 100%;
+  aspect-ratio: 1/1;
+  margin: 0 2em;
+}
+
+.searchButton{
+  height: calc(100% - 0.35em);
+  aspect-ratio: 1/1;
+  padding: 0.35em;
+  color: white;
+  border-radius: 50%;
+  margin: 0.25em;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  margin: 1em 3em;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover{
+  height: 100vh;
+  width: 100%;
+  background-image: url("/diagonal-concept-vela-verde_14.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .topFilter{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 12.65%, rgba(255, 255, 255, 0.8) 35.46%, rgba(255, 255, 255, .8) 46.03%, #FFFFFF 86.59%);
+    padding: 0 2em 0 2em;
+    overflow: hidden;
+  }
+
+  .introText{
+    height: 80%;
+    width: 50%;
+    margin: 0 25%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    animation: widthChange 2s ease;
+
+  @keyframes widthChange{
+    0%{
+			margin-top: 100%;
+    	}
+  }
+
+    h1{
+      height: 100%;
+      font-size: 900;
+      font-size: 5em;
+    }
+  }
+
+  .showPoint{
+    height: 20%;
+    width: 100%;
+    padding: 0 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .point{
+    width: 28%;
+    display: flex;
+  }
+
+  .blockIcon{
+    height: 5em;
+    margin: 0 0.5em;
+    aspect-ratio: 1/1;
+    border-radius: 0.35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pointTitle{
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+
+}
+
+
+
+.pointInfos{
+  font-size: 0.8em;  
+}
+
+.image-paragraph{
+  width: 100%;
+  display: flex;
+  padding: 1em 5em;
+}
+
+.imageP{
+  width: 25%;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.textP{
+  width: 75VW;
+  padding-top: 2em;
+  margin: 0 2em;
+}
+
+.agenda{
+  width: 100%;
+  height: auto;
+  padding: 0.5em 3em 1.5em  3em;
+  background-color: #EEE;
+  text-align: center;
+  display: block;
+}
+
+.agendaContent{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.agendaItem{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.showMore{
+  width: 28%;
+}
+
+.miniItem{
+  width: calc(50% - 3em);
+  aspect-ratio: 1/0.25;
+  padding: 0 1em 1em 1em;
+  border-radius: 0.35em;
+  background-color: white;
+  margin: 1em;
+  text-align: left;
+  
+  p, h1{
+    margin: 0.1em 0;
+  }
+}
+
+.fullAgenda{
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+
+  .title{
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+.AgendaItem{
+  width: calc(25% - 4em);
+  aspect-ratio: 1/0.75;
+  padding: 1em;
+  border-radius: 0.35em;
+  background-color: #EEE;
+  margin: 2em;
+  text-align: left;
+  
+  p, h1{
+    margin: 0.1em 0;
+  }
+}
+
+
+.team{
+  width: 100%;
+  height: auto;
+  padding: 1em 0;
+  text-align: center;
+
+  .button {
+    margin: 1em 0;
+  }
+}
+
+
+.calendar{
+  width: 90%;
+  margin: 0 5%;
+  aspect-ratio: 1/0.60;
+  position: relative;
+}
+
+.scrollingView{ 
+  height:  auto;
+  width: 100%;
+  display: flex; 
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  position: relative;
+  scroll-snap-type: x mandatory;
+}
+
+
+.scrollCard{
+  width: 40%;
+  aspect-ratio: 1/0.5;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.051);
+  margin: 1em;
+  border-radius: 0.5em;
+  flex: none;
+  scroll-snap-align: center;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.scrollCard:first-child{
+  margin-left: 4em;
+}
+.scrollCard:last-child{
+  margin-right: 4em;
+}
+
+.memberPhoto{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  background-image: url("/diagonal-concept-vela-verde_14.jpg");
+
+}
+
+.memberInfos{
+  width: 55%;
+  margin: 1em;
+  text-align: left;
+
+  p{
+    margin: 0;
+  }
+
+  .button{
+    width: 100%;
+  }
+}
+
+.pageContent{
+  height: auto;
+  width: 100%;
+  margin-top:7em ;
+}
+
+.form{
+  width: 100%;
+  padding: 5% 20%;
+  min-height: calc(100vh - 18em);
+
+  .input{
+    width: 100%;
+    margin: 2em 0;
+  }
+
+  input, textarea{
+    padding: 1em;
+    border-radius: 0.35em;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: #EEE;
+  }
+
+  .button{
+    width: 100%;
+  }
+}
+
+.resume{
+  margin: 5%;
+  text-align: center;
+}
+
+.teamSection{
+  text-align: left;
+  h2{
+    margin: 1em;
+  }
+}
+
+.passedEvent{
+  width: 100%;
+  margin: 5%;
+  height: 80vh;
+  background-color: white;
+  border-radius: 1em;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  border: 1px solid #5C5C5C50;
+}
+
+.photoViewer{
+  height: 100%;
+  width: 60%;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s;
+
+  .zap{
+    height: 100%;
+    width: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .material-icons{     
+    color: #000033;
+    }
+  }
+
+  .zap:first-child{
+    background: linear-gradient(90deg, #FFFFFF80 -2.32%, #FFFFFF00 80.43%);
+
+  }
+
+  .zap:last-child{
+    background: linear-gradient(90deg, #FFFFFF00 -2.32%, #FFFFFF80 80.43%);
+
+  }
+}
+
+.postInformation{
+  width: 40%;
+  padding: 1em 2em;
+  height: 100%;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+
+  .navBar{ 
+    background: black !important;
+}
+
+.topFilter{
+  background: linear-gradient(180deg, black 12.65%, rgba(0, 0, 0, 0.85) 35.46%, rgba(0, 0, 0, 0.85) 46.03%, black 86.59%) !important;
+}
+
+.agenda{
+  background-color: #5C5C5C50 !important;
+}
+
+.miniItem, .AgendaItem,.passedEvent{
+  background-color: #5C5C5C50;
+}
+
+
+.scrollCard{
+  background: #5C5C5C50;
+}
+
+.form{
+  input, textarea{
+    background-color: #5C5C5C50;
+  }
+
+}
+
+.photoViewer{
+
+.zap:first-child{
+  background: linear-gradient(90deg, #5C5C5C50 -2.32%, #5C5C5C00 80.43%);
+
+}
+
+.zap:last-child{
+  background: linear-gradient(90deg, #5C5C5C00 -2.32%, #5C5C5C50 80.43%);
+
+}
+  }
+
+}
+
+@media (max-width: 699px){
+ 
+.header{
+  height: 4.5em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .navBar{    
+    display: none;
+  }
+}
+
+.footer {
+  margin: 1em;
+}
+
+.hideMenu{
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  transition: .5s;
+  display: block;
+}
+
+.showMenu{
+  transition: .5s;
+  display: block;
+  .navList{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    li{   
+    list-style: none;
+    margin: 2em 1em;
+    padding: 0.35em 1.5em;
+    border-radius: 0.25em;
+    height: 4em;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    transition: padding .5s, margin .5s;
+    }}
+
+    .navigateActive{
+      background-color: #FF006B;
+      color: white;
+    }
+
+    .navigateElement:hover{   
+      border: 2px solid #FF006B;
+      }
+
+      .navigateElement{   
+        background: #FFFFFF50;
+        }
+}
+
+.searchButton{
+  display: none;
+}
+
+.MenuForPhone{
+  height: 4em;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.35em;
+  cursor: pointer;
+}
+
+.cover{
+  height: auto;
+  margin-top: 3em;
+  background-size: cover;
+
+  .topFilter{
+    padding: 0
+  }
+
+  .introText{
+    height: auto;
+    width: 90%;
+    margin: 25% 5%;
+
+    h1{
+      font-size: 3em;
+    }
+  }
+
+  .showPoint{
+    height:auto;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .point{
+    width: 100%;
+    margin: 1em;
+    display: flex;
+  }
+
+}
+
+.image-paragraph{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.imageP{
+  width: 90% !important;
+  margin: 0 5%;
+  aspect-ratio: 1/1;
+}
+
+.textP{
+  width: 100%;
+}
+
+.image-paragraph{
+  .imageP{
+    order: 1;
+  }
+  
+  .textP{
+    order: 2;
+  }
+}
+
+.agenda{
+  padding: 0.5em 1em 1.5em  1em;
+}
+
+.agendaContent{
+  flex-wrap: wrap;
+}
+
+.agendaItem{
+  width: 100%
+}
+
+.showMore{
+  width: 100%;
+}
+
+.fullAgenda{
+  padding: 0.5em;
+}
+
+.miniItem, .AgendaItem{
+  width: 100%;
+}
+
+.calendar{
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: 0;
+}
+
+.scrollingView{ 
+  padding: 0 2em 0 1em;
+}
+
+
+.scrollCard{
+  width: 82%;
+  height: auto;
+  aspect-ratio: auto;
+  margin: 1em !important;
+  flex-wrap: wrap;
+  padding: 0;
+  align-items: flex-start;
+}
+.memberPhoto{
+  width: 100%;
+  height: 20em;
+  background-size: cover;
+}
+
+.memberInfos{
+  width: 100%;
+  height: auto;
+  margin: 1em;
+  text-align: left;
+
+  .button{
+    margin-bottom: 0;
+  }
+}
+
+.form{
+  width: 100%;
+  padding: 5%;
+  height: calc(100vh - 18em);}
+
+  .passedEvent{
+    margin: 2.5%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  
+  .photoViewer{
+    width: 100%;
+    height: 20em;
+  }
+
+  .postInformation{
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+
+@media (min-width: 700px) and (max-width:1140px ){
+  .header{
+    height: 4.5em;
+    width: 100%;
+    .navBar{ 
+      width: calc(100vw - 9em)!important;
+      overflow: hidden;
+      align-items: center;
+      justify-content: space-between;
+
+      li{
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+      }
+    }
+  }
+
+  .cover{
+    height: auto;
+    margin-top: 3em;
+    background-size: cover;
+  
+    .topFilter{
+      padding: 0
+    }
+  
+    .introText{
+      height: auto;
+      width: 90%;
+      margin: 10% 5%;
+    }
+    .showPoint{
+      height:auto;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 1.5em;
+    }
+  
+    .point{
+      width: 45%;
+      margin: 1em;
+    }
+  
+  }
+
+  .imageP{
+    width: 50% !important;
+    margin: 0 5%;
+    aspect-ratio: 1/1;
+  }
+
+  
+  .textP{
+    width: 50%;
+  }
+
+  .agendaContent{
+    flex-wrap: wrap;
+  }
+  
+  .agendaItem{
+    width: 100%
+  }
+
+  .AgendaItem{
+    width: calc(33% - 4em);
+    aspect-ratio: 1/0.75;
+  }
+  
+  .showMore{
+    width: 100%;
+  }
+
+  .calendar{
+    width: 30%;
+    margin: 0 35% !important;
+    aspect-ratio: 1/1;
+    margin: 0;
+  }
+
+  .scrollCard{
+    width: 40%;
+    height: auto;
+    aspect-ratio: auto;
+    margin: 1em !important;
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .memberPhoto{
+    width: 100%;
+    height: 20em;
+    background-size: cover;
+  }
+  
+  .memberInfos{
+    width: 100%;
+    height: auto;
+    margin: 1em;
+    text-align: left;
+  
+    .button{
+      margin-bottom: 0;
+    }
+  }
+}
