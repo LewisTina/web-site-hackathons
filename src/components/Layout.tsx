@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import NavBar from './NavBar'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import '../../styles/Layout.module.scss'
 import Footer from './Footer'
 
 interface LayoutProps {
